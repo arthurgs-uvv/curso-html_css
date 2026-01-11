@@ -1,0 +1,21 @@
+div{
+    display: inline-block;
+    background-color: lightgray;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+
+div:hover{ /*ele altera a cor após o mouse passar por ele*/
+    background-color: yellow;
+}
+
+div > p{
+    display: none;
+}
+
+div:hover > p{ /*mexendo nos elementos filhos*/
+    display: block;
+    background-color: red;
+    color: aliceblue;
+}
