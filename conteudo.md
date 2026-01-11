@@ -55,12 +55,11 @@ Uso: navegação e exibição de imagens.
 </audio>
 ``` 
 ### Principais Atributos
-```
-controls → exibe controles
-autoplay → inicia automaticamente
-loop → reprodução contínua
-preload → controle de carregamento
-```
+controls: exibe controles  
+autoplay: inicia automaticamente  
+loop: reprodução contínua  
+preload: controle de carregamento  
+
 
 ## Vídeo em HTML5
 ```
@@ -69,10 +68,10 @@ preload → controle de carregamento
 </video>
 ```
 ### Atributos Importantes
-width → largura do vídeo
-poster → imagem de capa
-controls → controles visíveis
-autoplay → reprodução automática
+width: largura do vídeo  
+poster: imagem de capa  
+controls: controles visíveis  
+autoplay: reprodução automática  
 
 ## Incorporação de Vídeos Externos
 ```
@@ -130,10 +129,10 @@ div {
 }
 ```
 ### Propriedades
-width → largura
-padding → espaço interno
-margin → espaço externo
-border → borda
+width: largura  
+padding: espaço interno  
+margin: espaço externo  
+border: borda  
 
 ## Display e Tipos de Elementos
 ```
@@ -141,9 +140,9 @@ display: block;
 display: inline;
 display: inline-block;
 ```
-Block → ocupa linha inteira (div, p, section)
-Inline → ocupa apenas o conteúdo (span, a)
-Inline-block → mistura dos dois
+Block: ocupa linha inteira (div, p, section)  
+Inline: ocupa apenas o conteúdo (span, a)  
+Inline-block: mistura dos dois  
 
 ## Cores no CSS
 ```
@@ -230,9 +229,9 @@ Uso: estilizar partes específicas do elemento.
 }
 ```
 ### Propriedades Comuns
-display: flex
-flex-direction
-justify-content
-align-items
-flex-wrap
+display: flex  
+flex-direction  
+justify-content  
+align-items  
+flex-wrap  
 Uso: layouts responsivos e alinhamento eficiente.
