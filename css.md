@@ -13,9 +13,11 @@ O CSS funciona aplicando regras visuais aos elementos HTML.
 ## Seletores
 ### Seletores Básicos
 ```
-p { }
-#id { }
-.classe { }
+#    = id
+.    = class
+:    = pseudo-class
+::   = pseudo-element
+>    = children
 ```
 Funcionalidade:  
 p → aplica estilo a todas as tags `<p>`  
