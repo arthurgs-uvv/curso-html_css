@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(139, 247, 166);
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: linear-gradient(to bottom, #5ad66e, #003d00);
+    padding: 10px;
+    color: white;
+}
+
+main{
+    background-color: white;
+    padding: 1px 20px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.493);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.espacar{
+    padding-bottom: 5px;
+}
+
+.centralizar-texto{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: rgb(0, 58, 0);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}

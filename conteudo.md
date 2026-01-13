@@ -247,4 +247,6 @@ margin
 
 ## Tipos de Caixa
 box-level: ocupa 100% da tela, contem quebra de linha automática (div; h1-h6; p; main; header; nav; article; aside; footer; form; video)
+
 inline-level: ocupa o tamanho necessário, não contem quebra de linha automatica (span; a; code; small; strong; em; sup; sub; label; button; input; select)
+
