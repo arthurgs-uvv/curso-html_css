@@ -2,6 +2,7 @@ body{
     background-color: rgb(139, 247, 166);
     margin: 0;
     padding: 0;
+    font-family: 'MinhaFonte', 'arial', sans-serif;
 }
 
 header{
@@ -18,14 +19,23 @@ main{
     box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.493);
 }
 
+nav{
+    padding: 0px 0px 0px 10px;
+}
+
+.h1-1-main{
+    color: #003d00;
+}
+
 img{
     max-width: 100%;
     height: auto;
     display: block;
+    margin: auto;
 }
 
 .espacar{
-    padding-bottom: 5px;
+    padding-bottom: 7px;
 }
 
 .centralizar-texto{
@@ -40,6 +50,8 @@ a{
 
 a:hover{
     text-decoration: underline;
+    color: rgb(255, 0, 221);
+    font-weight: bold;
 }
 
 footer{
@@ -47,4 +59,48 @@ footer{
     color: white;
     text-align: center;
     padding: 5px;
+}
+
+h2{
+    background: linear-gradient(to right, #5ad66f33, #ffffff);
+    color: #003d00;
+}
+
+.section-video{
+    background-color: #003d00;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.section-final{
+    border-radius: 10px;
+    background-color: rgb(139, 247, 166);
+    
+}
+
+.cabecalho-final{
+    background-color: #5ad66e;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.texto-final{
+    padding: 10px;
+}
+
+.link-texto{
+    color: black;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'MinhaFonte';
+    src: url('fontes/idroid.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font{
+    font-family: 'MinhaFonte', 'arial', sans-serif;
 }
