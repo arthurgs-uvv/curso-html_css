@@ -1,19 +1,5 @@
 # HTML – Estrutura e Elementos
 
-## Estrutura Básica de um Documento HTML
-```
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Título da página</title>
-</head>
-<body>
-</body>
-</html>
-```
-Uso: estrutura mínima obrigatória de qualquer página HTML.
-
 ## Tags Semânticas de Estrutura
 ```
 <header>     <!-- Cabeçalho -->
@@ -54,6 +40,7 @@ Uso: navegação e exibição de imagens.
   <source src="audio.mp3" type="audio/mpeg">
 </audio>
 ``` 
+
 ### Principais Atributos
 controls: exibe controles  
 autoplay: inicia automaticamente  
@@ -79,63 +66,16 @@ autoplay: reprodução automática
 ```
 Uso: inserir vídeos do YouTube ou Vimeo sem hospedar arquivos.
 
-
 ////////////////////////////////////////////////////////////////
 
-
 # CSS – Formas de Aplicação
-
-## CSS Inline
-```
-<p style="color: blue;">Texto</p>
-```
-Uso: estilização pontual (evitar sempre que possível).
-
-## CSS Interno
-```
-<style>
-  body {
-    background-color: lightgray;
-  }
-</style>
-```
-Uso: páginas únicas ou estilos específicos.
-
-## CSS Externo (Recomendado)
-```
-<link rel="stylesheet" href="style.css">
-
-body {
-  font-family: Arial, sans-serif;
-}
-```
-Uso: reutilização, organização e manutenção.
 
 ## Seletores CSS
 ```
 p { }          /* Seletor de tag */
 #id { }        /* Seletor por ID */
 .classe { }    /* Seletor por classe */
-
-Diferença entre ID e Class
-id → único
-class → reutilizável
 ```
-
-## Box Model (Modelo de Caixa)
-```
-div {
-  width: 300px;
-  padding: 10px;
-  margin: auto;
-  border: 1px solid black;
-}
-```
-### Propriedades
-width: largura  
-padding: espaço interno  
-margin: espaço externo  
-border: borda  
 
 ## Display e Tipos de Elementos
 ```
@@ -146,21 +86,6 @@ display: inline-block;
 Block: ocupa linha inteira (div, p, section)  
 Inline: ocupa apenas o conteúdo (span, a)  
 Inline-block: mistura dos dois  
-
-## Cores no CSS
-```
-Cores Nomeadas
-color: blue;
-
-RGB
-color: rgb(255, 0, 0);
-
-Hexadecimal
-color: #ff0000;
-
-HSL
-color: hsl(120, 100%, 50%);
-```
 
 ## Gradientes
 ```
@@ -192,16 +117,6 @@ font: italic bold 2em Arial, sans-serif;
 body {
   font-family: 'Open Sans', sans-serif;
 }
-```
-
-## Classes, IDs, DIV e SPAN
-```
-<div class="container">
-  <span class="destaque">Texto</span>
-</div>
-
-.container { }
-.destaque { }
 ```
 
 ## Pseudo-classes
@@ -303,21 +218,6 @@ div ~ p → irmãos seguintes
 
 Usados para controle preciso da hierarquia HTML.
 
-## Box Model (Modelo de Caixa)
-width  
-height  
-padding  
-margin  
-border  
-
-Funcionalidade:
-Todo elemento HTML é uma caixa, composta por:
-Conteúdo  
-Padding (espaço interno)  
-Border (borda)  
-Margin (espaço externo)  
-O Box Model controla tamanho, espaçamento e organização visual.
-
 ## Display
 ```
 display: block;  
@@ -357,20 +257,6 @@ Usado para controle avançado do layout.
 Funcionalidade:
 Controla quem fica na frente de quem quando elementos se sobrepõem.
 
-## Flexbox
-### Container Flex
-```
-display: flex;
-justify-content;
-align-items;
-flex-direction;
-```
-Funcionalidade:
-Cria layouts flexíveis, responsivos e alinhados, facilitando:
-Centralização
-Distribuição de espaço
-Ajuste automático de elementos
-
 ### Itens Flex
 ```
 flex-grow;
@@ -396,6 +282,14 @@ font-family;
 font-size;
 font-weight;
 line-height;
+
+@import url('fontes do google';)
+
+@font face{
+  font-family:'Android';
+  src: url('/') format('opentype');
+  font-weight: normal;
+}
 ```
 Funcionalidade:
 Controla fonte, tamanho, peso e espaçamento, impactando diretamente a legibilidade e estética.
@@ -409,17 +303,6 @@ letter-spacing;
 ```
 Funcionalidade:
 Define formatação textual, alinhamento, capitalização e espaçamento entre letras.
-
-## Cores
-```
-color;
-background-color;
-```
-Funcionalidade:
-Define cores de texto e fundo, influenciando:
-Identidade visual
-Acessibilidade
-Experiência do usuário
 
 ## Backgrounds
 ```
@@ -516,16 +399,13 @@ Permite criar layouts responsivos, adaptando o site a diferentes telas.
 ```
 --variavel
 var()
+
+:root{
+  --x: y;
+}
 ```
 Funcionalidade:
 Centraliza valores reutilizáveis, facilitando manutenção e padronização.
 
-## Reset CSS
-```
-* {
-  margin: 0;
-  padding: 0;
-}
-```
-Funcionalidade:
-Remove estilos padrões do navegador para garantir consistência visual.
+## Responsividade
+extensão: window resizer
