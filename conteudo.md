@@ -377,19 +377,6 @@ animation
 Funcionalidade:
 Cria animações completas e contínuas, controlando tempo e repetição.
 
-## Cursor
-`cursor: pointer;`
-Funcionalidade:
-Indica visualmente interatividade ao usuário.
-
-## Opacidade e Filtros
-```
-opacity;
-filter;
-```
-Funcionalidade:
-Cria efeitos visuais como transparência, desfoque e escala de cinza.
-
 ## Media Queries
 `@media`
 Funcionalidade:
@@ -408,4 +395,13 @@ Funcionalidade:
 Centraliza valores reutilizáveis, facilitando manutenção e padronização.
 
 ## Responsividade
-extensão: window resizer
+```
+extensão: window resizer  
+min-width: 320px; //menor tela possível
+max-width: 800px; //após a máxima disponível
+
+<picture> //para imagem
+  <source media="(max-width: 600px)" srcset="url-img">
+  <img src="url-outra-img" alt="Exemplo">
+  </picture>
+```
